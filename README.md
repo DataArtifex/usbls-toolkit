@@ -1,7 +1,8 @@
 # US Bureau of Labor Statistics (BLS) Toolkit
 
-[![PyPI - Version](https://img.shields.io/pypi/v/dartfx-usbls.svg)](https://pypi.org/project/dartfx-usbls)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/dartfx-usbls.svg)](https://pypi.org/project/dartfx-usbls)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
+[![Development Status](https://img.shields.io/badge/status-early%20release-orange.svg)](https://github.com/DataArtifex/usbls-toolkit)
 
 ---
 
