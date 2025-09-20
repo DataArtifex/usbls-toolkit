@@ -1,0 +1,192 @@
+{
+  "ap": {
+    "name": "Average Price Data",
+    "series_id_pattern": "(?P<database_id>[A-Z]{2})(?P<seasonal_code>[A-Z]{1})(?P<item_code>[\\d]{4})(.*)"
+  },
+  "bd": {
+    "name": "Business Employment Dynamics",
+    "series_id_pattern": "(?P<database_id>[A-Z]{2})(?P<seasonal_code>[A-Z]{1})(?P<msa_code>[\\d]{5})(?P<state_code>[\\d]{2})(?P<county_code>[\\d]{3})(?P<industry_code>[\\d]{6})(?P<unitanalysis_code>[\\d]{1})(?P<dataelement_code>[\\d]{1})(?P<sizeclass_code>[\\d]{2})(?P<dataclass_code>[\\d]{2})(?P<ratelevel_code>[A-Z]{1})(?P<periodicity_code>[A-Z]{1})(?P<ownership_code>[\\d]{1})(.*)"
+  },
+  "bg": {
+    "name": "Collective Bargaining-State and Local Government"
+  },
+  "bp": {
+    "name": "Collective Bargaining-Private Sector"
+  },
+  "cc": {
+    "name": "Employer Costs for Employee Compensation (SIC 1986-2003)"
+  },
+  "cd": {
+    "name": "Occupational Injuries and Illness - Characteristics Data (SIC)"
+  },
+  "ce": {
+    "name": "Employment, Hours, and Earnings-National (NAICS)",
+    "series_id_pattern": "(?P<database_id>[A-Z]{2})(?P<industry_code>[\\d]{8})(?P<datatype_code>[\\d]{4})(.*)"
+  },
+  "cf": {
+    "name": "Census of Fatal Occupational Injuries (1992-2002)"
+  },
+  "ch": {
+    "name": "Nonfatal cases involving days away from work: selected characteristics"
+  },
+  "ci": {
+    "name": "Employment Cost Index (NAICS)",
+    "series_id_pattern": "(?P<database_id>[A-Z]{2})(?P<seasonal_code>[A-Z]{1})(?P<owner_code>[\\d]{1})(?P<estimate_code>[\\d]{2})(?P<industry_code>[\\d]{4})(?P<occupation_code>[\\d]{3})(?P<subcell_code>[\\d]{2})(?P<periodicity_code>[A-Z]{1})(.*)"
+  },
+  "cm": {
+    "name": "Employer Costs for Employee Compensation (NAICS)",
+    "series_id_pattern": "(?P<database_id>[A-Z]{2})(?P<seasonal_code>[A-Z]{1})(?P<owner_code>[\\d]{1})(?P<industry_code>[\\d]{4})(?P<occupation_code>[\\d]{3})(?P<subcell_code>[\\d]{2})(?P<datatype_code>[A-Z]{1})(.*)"
+  },
+  "cs": {
+    "name": "Occupational Injuries and Illnesses - Characteristics Data"
+  },
+  "cu": {
+    "name": "Consumer Price Index - All Urban Consumers",
+    "series_id_pattern": "(?P<database_id>[A-Z]{2})(?P<seasonal_code>[A-Z]{1})(?P<periodicity_code>[A-Z]{1})(?P<area_code>[A-Z0-9]{4})(?P<item_code>[A-Z0-9]*)",
+    "is_supported": true
+  },
+  "cw": {
+    "name": "Consumer Price Index - All Urban Wage earners and clerical workers",
+    "series_id_pattern": "(?P<database_id>[A-Z]{2})(?P<seasonal_code>[A-Z]{1})(?P<periodicity_code>[A-Z]{1})(?P<area_code>[A-Z0-9]{4})(?P<item_code>[A-Z0-9]*)",
+    "is_supported": true
+  },
+  "cx": {
+    "name": "Consumer Expenditure Survey",
+    "series_id_pattern": "(?P<database_id>[A-Z]{2})(?P<seasonal_code>[A-Z]{1})(?P<item_code>[\\d]{6})(?P<demographics_code>[A-Z0-9]{4})(?P<characteristics_code>[A-Z0-9]{2}(?P<process_code>[A-Z]{1}*)"
+  },
+  "eb": {
+    "name": "Employee Benefits Survey (1979 - 2006)"
+  },
+  "ec": {
+    "name": "Employment Cost Index (SIC 1975 - 2005)"
+  },
+  "ee": {
+    "name": "Employment, Hours, and Earnings-National (SIC)"
+  },
+  "ei": {
+    "name": "International Price Index",
+    "series_id_pattern": "(?P<database_id>[A-Z]{2})(?P<seasonal_code>[A-Z]{1})(?P<index_code>[A-Z]{2})(?P<series_name>[A-Z0-9]+)\\s*)"
+  },
+  "ep": {
+    "name": "Employment Projections",
+    "series_id_pattern": "(?P<database_id>[A-Z]{2})(?P<seasonal_code>[A-Z]{1})(?P<occupation_code>[\\d]{6})(?P<industry_code>[\\d]{6})\\s*)"
+  },
+  "fi": {
+    "name": "Census of Fatal Occupational Injuries"
+  },
+  "fm": {
+    "name": "Marital and Family Labor Force Statistics"
+  },
+  "fw": {
+    "name": "Census of Fatal Occupational Injuries"
+  },
+  "gg": {
+    "name": "Green Goods and Services"
+  },
+  "gp": {
+    "name": "Geographic Profile"
+  },
+  "hc": {
+    "name": "Occupational Injuries and Illness - Characteristics Data (NAICS)"
+  },
+  "hs": {
+    "name": "Occupational Injury and Illness Rates (based on 1972 SIC codes)"
+  },
+  "ii": {
+    "name": "Occupational Injuries and Illnesses Industry Data"
+  },
+  "in": {
+    "name": "International Labor Statistics"
+  },
+  "ip": {
+    "name": "Industry Productivity and Costs",
+    "series_id_pattern": "(?P<database_id>[A-Z]{2})(?P<seasonal_code>[A-Z]{1})(?P<sector_code>[A-Z]{1})(?P<industry_code>[A-Z0-9\\_]{7})(?P<measure_code>[A-Z0-9]{3})(?P<duration_code>[\\d]{1})(?P<area_code>[\\d]{6})\\s*)"
+  },
+  "jl": {
+    "name": "Job Openings and Labor Turnover Survey (SIC)"
+  },
+  "la": {
+    "name": "Local Area Unemployment Statistics",
+    "series_id_pattern": "(?P<database_id>[A-Z]{2})(?P<seasonal_code>[A-Z]{1})(?P<area_code>[A-Z0-9]{15})(?P<measure_code>[0-9]{2})\\s*)"
+  },
+  "le": {
+    "name": "Weekly and Hourly Earnings Data from the Current Population Survey"
+  },
+  "li": {
+    "name": "Department Store Inventory Price Index"
+  },
+  "ln": {
+    "name": "Labor Force Statistics from the Current Population Survey (NAICS)"
+  },
+  "lu": {
+    "name": "Union Affiliation Data from the Current Population Survey"
+  },
+  "ml": {
+    "name": "Mass Layoff Statistics"
+  },
+  "mp": {
+    "name": "Major Sector Multifactor Productivity Index"
+  },
+  "mu": {
+    "name": "Consumer Price Index-All Urban Consumers (Old Series)"
+  },
+  "mw": {
+    "name": "Consumer Price Index-Urban Wage Earners and Clerical Workers (Old Series)"
+  },
+  "nb": {
+    "name": "National Compensation Survey"
+  },
+  "nc": {
+    "name": "National Compensation Survey (SIC 1997-2006)"
+  },
+  "nd": {
+    "name": "Producer Price Index Revision-Discontinued Series (NAICS)"
+  },
+  "nl": {
+    "name": "National Longitudinal Survey",
+    "supported": false
+  },
+  "oe": {
+    "name": "Occupation Employment Statistics"
+  },
+  "or": {
+    "name": "Occupational Requirements Survey"
+  },
+  "pc": {
+    "name": "Producer Price Index Revision-Current Series"
+  },
+  "pd": {
+    "name": "Producer Price Index Revision-Discontinued Series (SIC)"
+  },
+  "pr": {
+    "name": "Major Sector Productivity and Costs Index"
+  },
+  "sa": {
+    "name": "State and Area Employment, Hours, and Earnings (SIC)"
+  },
+  "sh": {
+    "name": "Occupational Injury and Illness Rates (based on 1987 SIC codes)"
+  },
+  "si": {
+    "name": "Occupational Injury and Illness Rates (2002 data)"
+  },
+  "sm": {
+    "name": "State and Area Employment, Hours, and Earnings (NAICS)"
+  },
+  "su": {
+    "name": "Chained CPI-All Urban Consumers"
+  },
+  "wd": {
+    "name": "Producer Price Index Commodity - Discontinued Series",
+    "supported": false
+  },
+  "wm": {
+    "name": "Modeled Wage Estimates"
+  },
+  "wp": {
+    "name": "Producer Price Index - Commodities"
+  },
+  "ws": {
+    "name": "Work Stoppage Data"
+  }
+}
