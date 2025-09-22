@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
 [![Development Status](https://img.shields.io/badge/status-early%20release-orange.svg)](https://github.com/DataArtifex/usbls-toolkit)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
 ---
 
@@ -17,6 +18,8 @@
 - [Supported Databases](#supported-databases)
 - [Examples](#examples)
 - [Development](#development)
+- [Contributing](#contributing)
+- [Governance](#governance)
 - [License](#license)
 
 ## Overview
@@ -414,15 +417,30 @@ usbls-toolkit/
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
+Please note that this project is governed by a [Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project, you agree to abide by its terms. For information about project governance, decision-making processes, and contributor roles, see our [Governance](GOVERNANCE.md) document.
+
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+## Governance
+
+This project follows a Benevolent Dictator governance model appropriate for small open source projects. The project lead makes final decisions while welcoming community input and contributions.
+
+For detailed information about:
+- Project leadership and roles
+- Decision-making processes
+- Contributor recognition
+- Conflict resolution
+- How the project may evolve over time
+
+Please see our [Governance Document](GOVERNANCE.md).
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
 ## Disclaimer
 

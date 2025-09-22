@@ -86,8 +86,8 @@ classDiagram
         +load()
     }
     
-    BlsRepository ||--o{ BlsDatabase : contains
-    BlsDatabase ||--o{ BlsFile : contains
+    BlsRepository "1" *-- "0..*" BlsDatabase : contains
+    BlsDatabase "1" *-- "0..*" BlsFile : contains
     BlsFile <|-- BlsDataFile
     BlsFile <|-- BlsSeriesFile
     BlsFile <|-- BlsCodeFile
