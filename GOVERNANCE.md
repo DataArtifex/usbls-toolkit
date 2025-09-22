@@ -114,6 +114,13 @@ As the project grows, this governance structure may evolve to:
 - Implement more formal voting procedures
 - Establish technical advisory groups for specific areas
 
+**Future Governance Model**: If the project community grows significantly, we would ideally transition from the current Benevolent Dictator model to a **Liberal Contribution** governance model. This would feature:
+- Distributed decision-making among trusted maintainers
+- Lower barriers to contribution and commit access
+- Emphasis on trust and post-commit review rather than pre-commit gatekeeping
+- Self-organizing teams around different functional areas
+- Consensus-based decisions for major changes
+
 Any such changes will be made transparently with community input.
 
 ## Contact
