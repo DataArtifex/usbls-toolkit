@@ -1,6 +1,6 @@
 # cm: Employer Costs for Employee Compensation (NAICS)
 
-Report Date: 2025-09-19
+Report Date: 2025-09-22
 
 ## Series File
 

@@ -3,8 +3,8 @@ Report Date: 2025-09-22
 
 - Total Databases: 58
 - Outdated Databases: 0
-- Aging Databases: 2
-- Inactive Databases: 25
+- Aging Databases: 2 (2+ years since last update)
+- Inactive Databases: 25 (4+ years since last update)
 
 | Id | Name | #Files | Size | Status | BLS updated | Local updated |
 |----|------|--------|------|--------|-------------|---------------|

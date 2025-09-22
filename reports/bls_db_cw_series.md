@@ -1,6 +1,6 @@
 # cw: Consumer Price Index - All Urban Wage earners and clerical workers
 
-Report Date: 2025-09-19
+Report Date: 2025-09-22
 
 ## Series File
 

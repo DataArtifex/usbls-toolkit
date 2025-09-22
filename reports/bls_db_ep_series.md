@@ -1,6 +1,6 @@
 # ep: Employment Projections
 
-Report Date: 2025-09-19
+Report Date: 2025-09-22
 
 ## Series File
 
@@ -86,26 +86,26 @@ Code lists and attributes for series components
 
 | Value | Label |
 |-------|-------|
-| 000000 | Total, all occupations |
-| 110000 | Management occupations |
-| 111000 | Top executives |
-| 111011 | Chief executives |
-| 111021 | General and operations managers |
-| 111031 | Legislators |
-| 112000 | Advertising, marketing, promotions, public relations, and sales managers |
-| 112011 | Advertising and promotions managers |
-| 112020 | Marketing and sales managers |
-| 112021 | Marketing managers |
-| 112022 | Sales managers |
-| 112030 | Public relations and fundraising managers |
-| 112032 | Public relations managers |
-| 112033 | Fundraising managers |
-| 113000 | Operations specialties managers |
-| 113010 | Administrative services and facilities managers |
-| 113012 | Administrative services managers |
-| 113013 | Facilities managers |
-| 113021 | Computer and information systems managers |
-| 113031 | Financial managers |
+| 00-0000 | Total, all occupations |
+| 11-0000 | Management occupations |
+| 11-1000 | Top executives |
+| 11-1011 | Chief executives |
+| 11-1021 | General and operations managers |
+| 11-1031 | Legislators |
+| 11-2000 | Advertising, marketing, promotions, public relations, and sales managers |
+| 11-2011 | Advertising and promotions managers |
+| 11-2020 | Marketing and sales managers |
+| 11-2021 | Marketing managers |
+| 11-2022 | Sales managers |
+| 11-2030 | Public relations and fundraising managers |
+| 11-2032 | Public relations managers |
+| 11-2033 | Fundraising managers |
+| 11-3000 | Operations specialties managers |
+| 11-3010 | Administrative services and facilities managers |
+| 11-3012 | Administrative services managers |
+| 11-3013 | Facilities managers |
+| 11-3021 | Computer and information systems managers |
+| 11-3031 | Financial managers |
 | ... | 1093 more codes |
 
 

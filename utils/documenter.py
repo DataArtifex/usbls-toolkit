@@ -18,6 +18,7 @@ def overview(repository, mdfile):
         "\n"
     ])
 
+
     mdfile.write("| Id | Name | #Files | Local updated |\n")
     mdfile.write("|----|------|--------|---------------|\n")
     for db_id,props in model.DATABASES.items():
@@ -176,8 +177,6 @@ def db_series_report(repository, mdfile, db):
             mdfile.write("No additional information available.\n\n")
             mdfile.write("\n\n")
 
-            
-
 def sync_report(repository, mdfile):
     mdfile.writelines([
         "# BLS Repository Sync Report\n",
@@ -236,9 +235,9 @@ def sync_report(repository, mdfile):
 
     mdfile.write(f"- Total Databases: {len(model.DATABASES)}\n")
     mdfile.write(f"- Outdated Databases: {outdated_databases}\n")
-    mdfile.write(f"- Aging Databases: {aging_databases}\n")
-    mdfile.write(f"- Inactive Databases: {inactive_databases}\n")
-    mdfile.write("\n")
+    mdfile.write(f"- Aging Databases: {aging_databases} (2+ years since last update)\n")
+    mdfile.write(f"- Inactive Databases: {inactive_databases} (4+ years since last update)\n")
+    mdfile.write("\n\n")
 
     mdfile.write("| Id | Name | #Files | Size | Status | BLS updated | Local updated |\n")
     mdfile.write("|----|------|--------|------|--------|-------------|---------------|\n")
