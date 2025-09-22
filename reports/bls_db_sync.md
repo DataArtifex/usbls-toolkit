@@ -1,8 +1,8 @@
 # BLS Repository Sync Report
-Report Date: 2025-09-16
+Report Date: 2025-09-22
 
 - Total Databases: 58
-- Outdated Databases: 1
+- Outdated Databases: 0
 - Aging Databases: 2
 - Inactive Databases: 25
 
@@ -26,7 +26,7 @@ Report Date: 2025-09-16
 | eb | Employee Benefits Survey (1979 - 2006) | 9 | <span style='white-space: nowrap'>247.61 KB</span> | aging, in-sync |<span style='color:orange; white-space: nowrap'>2022-02-18</span> |  <span style='color:green; white-space: nowrap'>2023-01-14</span> |
 | ec | Employment Cost Index (SIC 1975 - 2005) | 12 | <span style='white-space: nowrap'>4.83 MB</span> | inactive, in-sync |<span style='color:red; font-weight:bold; white-space: nowrap'>2018-10-12</span> |  <span style='color:green; white-space: nowrap'>2023-01-14</span> |
 | ee | Employment, Hours, and Earnings-National (SIC) | 89 | <span style='white-space: nowrap'>108.64 MB</span> | inactive, in-sync |<span style='color:red; font-weight:bold; white-space: nowrap'>2018-10-12</span> |  <span style='color:green; white-space: nowrap'>2023-01-14</span> |
-| ei | International Price Index | 21 | <span style='white-space: nowrap'>22.15 MB</span> | active, out-of-sync |<span style='color:green; white-space: nowrap'>2025-09-16</span> |  <span style='color:red; font-weight:bold; white-space: nowrap'>2025-08-15</span> |
+| ei | International Price Index | 21 | <span style='white-space: nowrap'>22.32 MB</span> | active, in-sync |<span style='color:green; white-space: nowrap'>2025-09-16</span> |  <span style='color:green; white-space: nowrap'>2025-09-16</span> |
 | ep | Employment Projections | 16 | <span style='white-space: nowrap'>67.97 MB</span> | active, in-sync |<span style='color:green; white-space: nowrap'>2025-08-28</span> |  <span style='color:green; white-space: nowrap'>2025-09-05</span> |
 | fi | Census of Fatal Occupational Injuries | 15 | <span style='white-space: nowrap'>514.78 MB</span> | inactive, in-sync |<span style='color:red; font-weight:bold; white-space: nowrap'>2012-04-25</span> |  <span style='color:green; white-space: nowrap'>2023-01-14</span> |
 | fm | Marital and Family Labor Force Statistics | 31 | <span style='white-space: nowrap'>3.44 MB</span> | active, in-sync |<span style='color:green; white-space: nowrap'>2025-04-23</span> |  <span style='color:green; white-space: nowrap'>2025-08-13</span> |
@@ -39,7 +39,7 @@ Report Date: 2025-09-16
 | in | International Labor Statistics | 13 | <span style='white-space: nowrap'>4.21 MB</span> | inactive, in-sync |<span style='color:red; font-weight:bold; white-space: nowrap'>2018-10-12</span> |  <span style='color:green; white-space: nowrap'>2023-01-14</span> |
 | ip | Industry Productivity and Costs | 13 | <span style='white-space: nowrap'>67.76 MB</span> | active, in-sync |<span style='color:green; white-space: nowrap'>2025-08-28</span> |  <span style='color:green; white-space: nowrap'>2025-08-28</span> |
 | jl | Job Openings and Labor Turnover Survey (SIC) | 11 | <span style='white-space: nowrap'>584.30 KB</span> | inactive, in-sync |<span style='color:red; font-weight:bold; white-space: nowrap'>2018-10-12</span> |  <span style='color:green; white-space: nowrap'>2023-01-14</span> |
-| la | Local Area Unemployment Statistics | 83 | <span style='white-space: nowrap'>2342.85 MB</span> | active, in-sync |<span style='color:green; white-space: nowrap'>2025-08-27</span> |  <span style='color:green; white-space: nowrap'>2025-08-27</span> |
+| la | Local Area Unemployment Statistics | 83 | <span style='white-space: nowrap'>2342.99 MB</span> | active, in-sync |<span style='color:green; white-space: nowrap'>2025-09-19</span> |  <span style='color:green; white-space: nowrap'>2025-09-22</span> |
 | le | Weekly and Hourly Earnings Data from the Current Population Survey | 23 | <span style='white-space: nowrap'>21.16 MB</span> | active, in-sync |<span style='color:green; white-space: nowrap'>2025-07-22</span> |  <span style='color:green; white-space: nowrap'>2025-08-13</span> |
 | li | Department Store Inventory Price Index | 9 | <span style='white-space: nowrap'>941.94 KB</span> | inactive, in-sync |<span style='color:red; font-weight:bold; white-space: nowrap'>2016-07-15</span> |  <span style='color:green; white-space: nowrap'>2023-01-14</span> |
 | ln | Labor Force Statistics from the Current Population Survey (NAICS) | 39 | <span style='white-space: nowrap'>371.54 MB</span> | active, in-sync |<span style='color:green; white-space: nowrap'>2025-09-05</span> |  <span style='color:green; white-space: nowrap'>2025-09-05</span> |
@@ -59,7 +59,7 @@ Report Date: 2025-09-16
 | sa | State and Area Employment, Hours, and Earnings (SIC) | 118 | <span style='white-space: nowrap'>538.83 MB</span> | inactive, in-sync |<span style='color:red; font-weight:bold; white-space: nowrap'>2011-11-16</span> |  <span style='color:green; white-space: nowrap'>2023-01-14</span> |
 | sh | Occupational Injury and Illness Rates (based on 1987 SIC codes) | 10 | <span style='white-space: nowrap'>16.92 MB</span> | inactive, in-sync |<span style='color:red; font-weight:bold; white-space: nowrap'>2005-04-15</span> |  <span style='color:green; white-space: nowrap'>2023-01-14</span> |
 | si | Occupational Injury and Illness Rates (2002 data) | 9 | <span style='white-space: nowrap'>1.68 MB</span> | inactive, in-sync |<span style='color:red; font-weight:bold; white-space: nowrap'>2005-04-15</span> |  <span style='color:green; white-space: nowrap'>2023-01-14</span> |
-| sm | State and Area Employment, Hours, and Earnings (NAICS) | 97 | <span style='white-space: nowrap'>1686.23 MB</span> | active, in-sync |<span style='color:green; white-space: nowrap'>2025-08-19</span> |  <span style='color:green; white-space: nowrap'>2025-08-19</span> |
+| sm | State and Area Employment, Hours, and Earnings (NAICS) | 97 | <span style='white-space: nowrap'>1691.25 MB</span> | active, in-sync |<span style='color:green; white-space: nowrap'>2025-09-19</span> |  <span style='color:green; white-space: nowrap'>2025-09-22</span> |
 | su | Chained CPI-All Urban Consumers | 10 | <span style='white-space: nowrap'>782.08 KB</span> | active, in-sync |<span style='color:green; white-space: nowrap'>2025-09-11</span> |  <span style='color:green; white-space: nowrap'>2025-09-11</span> |
 | wd | Producer Price Index Commodity - Discontinued Series | 41 | <span style='white-space: nowrap'>120.30 MB</span> | active, in-sync |<span style='color:green; white-space: nowrap'>2025-09-10</span> |  <span style='color:green; white-space: nowrap'>2025-09-10</span> |
 | wm | Modeled Wage Estimates | 16 | <span style='white-space: nowrap'>160.44 MB</span> | active, in-sync |<span style='color:green; white-space: nowrap'>2024-08-22</span> |  <span style='color:green; white-space: nowrap'>2025-08-13</span> |

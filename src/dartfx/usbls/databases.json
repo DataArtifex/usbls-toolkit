@@ -116,7 +116,8 @@
     "name": "Department Store Inventory Price Index"
   },
   "ln": {
-    "name": "Labor Force Statistics from the Current Population Survey (NAICS)"
+    "name": "Labor Force Statistics from the Current Population Survey (NAICS)",
+    "series_id_pattern": "(?P<database_id>[A-Z]{2})(?P<seasonal_code>[A-Z]{1})(?P<series_code>[\\d]{8}[A-Z]?)\\s*)"
   },
   "lu": {
     "name": "Union Affiliation Data from the Current Population Survey"

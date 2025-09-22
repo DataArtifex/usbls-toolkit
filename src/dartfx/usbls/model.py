@@ -113,11 +113,13 @@ class BlsDatabase:
                 if filename.startswith(f"{self.id}.data."):
                     self._files[filename] = BlsDataFile(self, filename)
                 elif extension in [
-                    'area','area_type','base','category','characteristics','county','dataclass','dataelement','datatype','demographics','display','duration',
-                    'eductrn','estimate','footnote','index','industry','item','measure','msa','occupation',
-                    'otjt','owner','ownership','period',
-                    'periodicity','process','rank','ratelevel','subcell','seasonal','sector','sizeclass','state','srd',
-                    'subcategory','supersector','type','unitanalysis','wkex'
+                    'absn','activity','ages','area','area_type','base','born','category','cert','characteristics','chld','class','county',
+                    'dataclass','dataelement','datatype','demographics','disa','display','duration',
+                    'education','eductrn','entr','estimate','expr','footnote','hheader','hour',
+                    'index','industry','indy','item','jdes','measure','lfst','look','mari','mjhs','msa','occupation',
+                    'orig','otjt','owner','ownership','pcts','period','periodicity','process',
+                    'race','rank','ratelevel','rjnw','rnlf','rwns','seasonal','seek','sector','sexs','sizeclass','state','srd',
+                    'subcategory','subcell','supersector','tdat','tlwk','type','unitanalysis','vets','wkex','wkst'
                     ]:
                     self._files[filename] = BlsCodeFile(self, filename)
                 elif extension == 'contacts':
@@ -753,10 +755,10 @@ class BlsCodeFile(BlsFile):
                             'occ_code': 'occupation_code',
                             'occ_title': 'occupation_title'
                         })
-                        logging.debug("Patching ep.occupation codes")
-                        # remove dash character at position three in 'occ_code' column 1
-                        # 00-0000 --> 000000	
-                        self._pandas_df['occupation_code'] = self._pandas_df['occupation_code'].apply(lambda x: x[:2] + x[3:])
+                        # TODO: do we want to remove dash character at position three in 'occ_code' column 1?
+                        # e.g. 00-0000 --> 000000
+                        # logging.debug("Patching ep.occupation codes")
+                        # self._pandas_df['occupation_code'] = self._pandas_df['occupation_code'].apply(lambda x: x[:2] + x[3:])
 
                 elif self.database.id == 'la':
                     if self.extension == 'area_type':
