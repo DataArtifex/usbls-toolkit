@@ -436,9 +436,11 @@ class BlsDatabase:
             if attribute_name == 'series_id': # skip series_id itself
                 continue
             attribute = {'name': attribute_name}
-            if attribute_name.endswith('_code') or attribute_name.endswith('_codes'):
+            if attribute_name.startswith('seasonal'):
+                attribute['type'] = 'time'
+            elif attribute_name.endswith('_code') or attribute_name.endswith('_codes'):
                 attribute['type'] = 'code'
-            elif attribute_name.endswith('_year') or attribute_name.endswith('_period'):
+            elif attribute_name.endswith('_year') or attribute_name.endswith('_period') or attribute_name.startswith('seasonal'):
                 attribute['type'] = 'time'
             elif attribute_name.endswith('_name') or attribute_name.endswith('_text') or attribute_name.endswith('_title') or attribute_name.endswith('_desc'):
                 attribute['type'] = 'text'
@@ -630,17 +632,98 @@ class BlsFile:
         else:
             return f"{size / MB:.2f} MB"
         
-    def download(self, chunk_size=8192) -> None:
-        """ Downloads the file from the BLS website.
+    def download(self, chunk_size=1024*1024, max_retries=3, timeout=30) -> None:
+        """ Downloads the file from the BLS website with robust error handling.
+        
+        Args:
+            chunk_size: Size of chunks to download (default: 1MB)
+            max_retries: Maximum number of retry attempts (default: 3)
+            timeout: Request timeout in seconds (default: 30)
         """
-        logging.info(f"Downloading {self.bls_url} as {self.filepath}")
-        with requests.get(self.bls_url, headers=BlsDatabase.BLS_REQUEST_HEADERS, stream=True) as r:
-            r.raise_for_status()
-            logging.debug(f"Saving file to {self.filepath}")
-            with open(self.filepath, 'wb') as f:
-                for chunk in r.iter_content(chunk_size): 
-                    f.write(chunk)
-        self.refresh_stats()
+        import time
+        from requests.exceptions import RequestException, Timeout, ConnectionError
+        
+        temp_filepath = f"{self.filepath}.tmp"
+        
+        for attempt in range(max_retries):
+            try:
+                logging.info(f"Downloading {self.bls_url} (attempt {attempt + 1}/{max_retries})")
+                
+                # Download with streaming (don't rely on HEAD for size - can be compressed/different)
+                with requests.get(
+                    self.bls_url, 
+                    headers=BlsDatabase.BLS_REQUEST_HEADERS, 
+                    stream=True,
+                    timeout=timeout
+                ) as r:
+                    r.raise_for_status()
+                    
+                    # Try to get expected size from response headers
+                    total_size = int(r.headers.get('content-length', 0))
+                    if total_size > 0:
+                        logging.info(f"Expected size: {self.format_size(total_size)}")
+                    
+                    downloaded = 0
+                    last_log_time = time.time()
+                    log_interval = 5  # Log progress every 5 seconds
+                    
+                    with open(temp_filepath, 'wb') as f:
+                        for chunk in r.iter_content(chunk_size=chunk_size):
+                            if chunk:  # filter out keep-alive new chunks
+                                f.write(chunk)
+                                downloaded += len(chunk)
+                                
+                                # Log progress periodically
+                                current_time = time.time()
+                                if total_size > 0 and (current_time - last_log_time) >= log_interval:
+                                    progress_pct = (downloaded / total_size) * 100
+                                    downloaded_fmt = self.format_size(downloaded)
+                                    total_fmt = self.format_size(total_size)
+                                    logging.info(f"Progress: {progress_pct:.1f}% ({downloaded_fmt} / {total_fmt})")
+                                    last_log_time = current_time
+                
+                # Check if file was actually downloaded
+                if not os.path.exists(temp_filepath):
+                    raise IOError("Downloaded file does not exist")
+                
+                actual_size = os.path.getsize(temp_filepath)
+                if actual_size == 0:
+                    raise IOError("Downloaded file is empty")
+                
+                # Log size info but don't fail on mismatch
+                # (Content-Length can be wrong due to compression, line endings, etc.)
+                if total_size > 0:
+                    size_diff = abs(actual_size - total_size)
+                    if size_diff > 0:
+                        size_diff_pct = (size_diff / total_size) * 100
+                        logging.debug(f"Downloaded size: {self.format_size(actual_size)} vs expected: {self.format_size(total_size)} (diff: {size_diff_pct:.1f}%)")
+                
+                # Move temp file to final location
+                if os.path.exists(self.filepath):
+                    os.remove(self.filepath)
+                os.rename(temp_filepath, self.filepath)
+                
+                logging.info(f"Download completed: {self.filepath} ({self.format_size(actual_size)})")
+                self.refresh_stats()
+                return
+                
+            except (RequestException, Timeout, ConnectionError, IOError) as e:
+                logging.warning(f"Download attempt {attempt + 1} failed: {str(e)}")
+                
+                # Clean up temp file if it exists
+                if os.path.exists(temp_filepath):
+                    try:
+                        os.remove(temp_filepath)
+                    except:
+                        pass
+                
+                if attempt < max_retries - 1:
+                    wait_time = 2 ** attempt  # Exponential backoff: 1s, 2s, 4s
+                    logging.info(f"Retrying in {wait_time} seconds...")
+                    time.sleep(wait_time)
+                else:
+                    logging.error(f"Failed to download {self.bls_url} after {max_retries} attempts")
+                    raise
     
     def refresh_stats(self) -> None:
         """Refreshes the file statistics.
