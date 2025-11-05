@@ -1,6 +1,6 @@
 # cx: Consumer Expenditure Survey
 
-Report Date: 2025-09-22
+Report Date: 2025-11-05
 
 ## Series File
 
@@ -193,7 +193,7 @@ Codes file/list not available.
 | end_period | `time`|
 | end_year | `time`|
 | footnote_codes | `code`|
-| seasonal | `other`|
+| seasonal | `time`|
 | series_title | `text`|
 | subcategory_code | `code`|
 
@@ -307,10 +307,11 @@ Codes file/list not available.
 | 9 | For more information on the TAXSIM process and the models used to calculate these estimates see https://www.bls.gov/cex/tables-getting-started-guide.htm. |
 
 
-### seasonal (other)
+### seasonal (time)
 
-No additional information available.
-
+| Value | Count |
+|-------|-------|
+| U | 181887 |
 
 
 ### series_title (text)

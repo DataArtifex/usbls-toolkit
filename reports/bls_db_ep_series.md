@@ -1,6 +1,6 @@
 # ep: Employment Projections
 
-Report Date: 2025-09-22
+Report Date: 2025-11-05
 
 ## Series File
 
@@ -161,7 +161,7 @@ Code lists and attributes for series components
 | occ_type | `other`|
 | otjt_code | `code`|
 | rank_code | `code`|
-| seasonal | `other`|
+| seasonal | `time`|
 | series_title | `text`|
 | wkex_code | `code`|
 
@@ -304,10 +304,11 @@ No additional information available.
 | 1 | n.a. |
 
 
-### seasonal (other)
+### seasonal (time)
 
-No additional information available.
-
+| Value | Count |
+|-------|-------|
+| U | 113473 |
 
 
 ### series_title (text)

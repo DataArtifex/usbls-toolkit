@@ -1,6 +1,6 @@
 # ei: International Price Index
 
-Report Date: 2025-09-22
+Report Date: 2025-11-05
 
 ## Series File
 
@@ -104,7 +104,7 @@ Code lists and attributes for series components
 | end_period | `time`|
 | end_year | `time`|
 | footnote_codes | `code`|
-| seasonal | `other`|
+| seasonal | `time`|
 | series_name | `text`|
 | series_title | `text`|
 
@@ -243,10 +243,11 @@ Code lists and attributes for series components
 | R | Revised. |
 
 
-### seasonal (other)
+### seasonal (time)
 
-No additional information available.
-
+| Value | Count |
+|-------|-------|
+| U | 1625 |
 
 
 ### series_name (text)

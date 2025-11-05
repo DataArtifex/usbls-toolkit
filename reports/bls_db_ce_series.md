@@ -1,6 +1,6 @@
 # ce: Employment, Hours, and Earnings-National (NAICS)
 
-Report Date: 2025-09-22
+Report Date: 2025-11-05
 
 ## Series File
 
@@ -130,7 +130,7 @@ Code lists and attributes for series components
 | end_period | `time`|
 | end_year | `time`|
 | footnote_codes | `code`|
-| seasonal | `other`|
+| seasonal | `time`|
 | series_title | `text`|
 | supersector_code | `code`|
 
@@ -207,10 +207,12 @@ Code lists and attributes for series components
 | P | preliminary |
 
 
-### seasonal (other)
+### seasonal (time)
 
-No additional information available.
-
+| Value | Count |
+|-------|-------|
+| S | 11027 |
+| U | 11022 |
 
 
 ### series_title (text)

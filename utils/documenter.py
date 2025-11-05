@@ -263,7 +263,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Generate BLS database reports')
     
     # General arguments that apply to all reports
-    parser.add_argument('-r','--repository', default='/Volumes/Seagate/DataArchive/HighValueDataNetwork/us-bls/repository', help='Path to BLS repository')
+    parser.add_argument('-r','--repository', default='/data/us-bls/repository', help='Path to BLS repository')
     parser.add_argument('-db', '--database', help='Database name (required for database-specific reports)')
     
     # Subparsers for different report types

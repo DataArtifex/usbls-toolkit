@@ -1,6 +1,6 @@
 # bd: Business Employment Dynamics
 
-Report Date: 2025-09-22
+Report Date: 2025-11-05
 
 ## Series File
 
@@ -349,7 +349,7 @@ Code lists and attributes for series components
 | end_period | `time`|
 | end_year | `time`|
 | footnote_codes | `code`|
-| seasonal | `other`|
+| seasonal | `time`|
 | series_title | `text`|
 
 
@@ -402,10 +402,12 @@ Code lists and attributes for series components
 | 2 | An administrative event occurred during this quarter |
 
 
-### seasonal (other)
+### seasonal (time)
 
-No additional information available.
-
+| Value | Count |
+|-------|-------|
+| S | 16404 |
+| U | 18060 |
 
 
 ### series_title (text)

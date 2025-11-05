@@ -1,6 +1,6 @@
 # ap: Average Price Data
 
-Report Date: 2025-09-22
+Report Date: 2025-11-05
 
 ## Series File
 
@@ -26,8 +26,8 @@ Variables in the ap.series file
 | footnote_codes | 0 | 0 | N/A | 0 |
 | begin_year | 1482 | 30 | 1978 | 494 |
 | begin_period | 1482 | 12 | M01 | 935 |
-| end_year | 1482 | 46 | 2025 | 439 |
-| end_period | 1482 | 12 | M12 | 471 |
+| end_year | 1482 | 46 | 2025 | 440 |
+| end_period | 1482 | 12 | M09 | 483 |
 
 
 ## Series ID Components
@@ -211,12 +211,12 @@ Code lists and attributes for series components
 | M01 | 26 |
 | M02 | 40 |
 | M03 | 33 |
-| M04 | 72 |
+| M04 | 71 |
 | M05 | 48 |
 | M06 | 124 |
-| M07 | 56 |
-| M08 | 440 |
-| M09 | 70 |
+| M07 | 55 |
+| M08 | 29 |
+| M09 | 483 |
 | M10 | 77 |
 | M11 | 25 |
 | M12 | 471 |
@@ -270,8 +270,8 @@ Code lists and attributes for series components
 | 2021 | 4 |
 | 2022 | 12 |
 | 2023 | 4 |
-| 2024 | 105 |
-| 2025 | 439 |
+| 2024 | 104 |
+| 2025 | 440 |
 
 
 ### footnote_codes (code)

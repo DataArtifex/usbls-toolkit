@@ -1,6 +1,6 @@
 # cw: Consumer Price Index - All Urban Wage earners and clerical workers
 
-Report Date: 2025-09-22
+Report Date: 2025-11-05
 
 ## Series File
 
@@ -31,7 +31,7 @@ Variables in the cw.series file
 | begin_year | 7867 | 62 | 1984 | 1646 |
 | begin_period | 7867 | 15 | S01 | 3395 |
 | end_year | 7867 | 9 | 2025 | 6228 |
-| end_period | 7867 | 14 | S01 | 2977 |
+| end_period | 7867 | 15 | S01 | 2977 |
 
 
 ## Series ID Components
@@ -172,7 +172,7 @@ Code lists and attributes for series components
 | end_period | `time`|
 | end_year | `time`|
 | footnote_codes | `code`|
-| seasonal | `other`|
+| seasonal | `time`|
 | series_title | `text`|
 
 
@@ -324,10 +324,11 @@ Code lists and attributes for series components
 | M02 | 3 |
 | M03 | 10 |
 | M04 | 5 |
-| M05 | 6 |
+| M05 | 5 |
 | M06 | 5 |
-| M07 | 343 |
-| M08 | 2886 |
+| M07 | 2 |
+| M08 | 421 |
+| M09 | 2807 |
 | M11 | 1 |
 | M12 | 11 |
 | M13 | 783 |
@@ -367,10 +368,12 @@ Code lists and attributes for series components
 |-------|-------|
 
 
-### seasonal (other)
+### seasonal (time)
 
-No additional information available.
-
+| Value | Count |
+|-------|-------|
+| S | 273 |
+| U | 7594 |
 
 
 ### series_title (text)

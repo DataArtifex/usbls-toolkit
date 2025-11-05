@@ -1,6 +1,6 @@
 # cu: Consumer Price Index - All Urban Consumers
 
-Report Date: 2025-09-22
+Report Date: 2025-11-05
 
 ## Series File
 
@@ -30,7 +30,7 @@ Variables in the cu.series file
 | footnote_codes | 0 | 0 | N/A | 0 |
 | begin_year | 8103 | 65 | 1984 | 1707 |
 | begin_period | 8103 | 16 | S01 | 3481 |
-| end_year | 8103 | 15 | 2025 | 6429 |
+| end_year | 8103 | 15 | 2025 | 6430 |
 | end_period | 8103 | 15 | S01 | 3059 |
 
 
@@ -172,7 +172,7 @@ Code lists and attributes for series components
 | end_period | `time`|
 | end_year | `time`|
 | footnote_codes | `code`|
-| seasonal | `other`|
+| seasonal | `time`|
 | series_title | `text`|
 
 
@@ -326,13 +326,13 @@ Code lists and attributes for series components
 |-------|-------|
 | M01 | 1 |
 | M02 | 3 |
-| M03 | 15 |
+| M03 | 13 |
 | M04 | 5 |
-| M05 | 11 |
+| M05 | 7 |
 | M06 | 5 |
-| M07 | 348 |
-| M08 | 3009 |
-| M09 | 2 |
+| M07 | 4 |
+| M08 | 420 |
+| M09 | 2941 |
 | M11 | 1 |
 | M12 | 12 |
 | M13 | 790 |
@@ -358,8 +358,8 @@ Code lists and attributes for series components
 | 2021 | 97 |
 | 2022 | 10 |
 | 2023 | 4 |
-| 2024 | 411 |
-| 2025 | 6429 |
+| 2024 | 410 |
+| 2025 | 6430 |
 
 
 ### footnote_codes (code)
@@ -378,10 +378,12 @@ Code lists and attributes for series components
 |-------|-------|
 
 
-### seasonal (other)
+### seasonal (time)
 
-No additional information available.
-
+| Value | Count |
+|-------|-------|
+| S | 325 |
+| U | 7778 |
 
 
 ### series_title (text)

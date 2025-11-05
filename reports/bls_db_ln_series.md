@@ -1,6 +1,6 @@
 # ln: Labor Force Statistics from the Current Population Survey (NAICS)
 
-Report Date: 2025-09-22
+Report Date: 2025-11-05
 
 ## Series File
 
@@ -137,7 +137,7 @@ Codes file/list not available.
 | rjnw_code | `code`|
 | rnlf_code | `code`|
 | rwns_code | `code`|
-| seasonal | `other`|
+| seasonal | `time`|
 | seek_code | `code`|
 | series_title | `text`|
 | sexs_code | `code`|
@@ -1077,10 +1077,12 @@ Codes file/list not available.
 | ... | 7 more codes |
 
 
-### seasonal (other)
+### seasonal (time)
 
-No additional information available.
-
+| Value | Count |
+|-------|-------|
+| S | 1241 |
+| U | 66003 |
 
 
 ### seek_code (code)

@@ -1,6 +1,6 @@
 # ci: Employment Cost Index (NAICS)
 
-Report Date: 2025-09-22
+Report Date: 2025-11-05
 
 ## Series File
 
@@ -256,7 +256,7 @@ Code lists and attributes for series components
 | end_period | `time`|
 | end_year | `time`|
 | footnote_codes | `code`|
-| seasonal | `other`|
+| seasonal | `time`|
 | series_title | `text`|
 
 
@@ -382,10 +382,12 @@ Code lists and attributes for series components
 | ... | 1 more codes |
 
 
-### seasonal (other)
+### seasonal (time)
 
-No additional information available.
-
+| Value | Count |
+|-------|-------|
+| S | 300 |
+| U | 2170 |
 
 
 ### series_title (text)

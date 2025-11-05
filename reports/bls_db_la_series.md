@@ -1,6 +1,6 @@
 # la: Local Area Unemployment Statistics
 
-Report Date: 2025-09-22
+Report Date: 2025-11-05
 
 ## Series File
 
@@ -30,7 +30,7 @@ Variables in the la.series file
 | begin_year | 33881 | 26 | 1990 | 30048 |
 | begin_period | 33881 | 1 | M01 | 33881 |
 | end_year | 33881 | 5 | 2025 | 33725 |
-| end_period | 33881 | 3 | M07 | 32808 |
+| end_period | 33881 | 2 | M08 | 33725 |
 
 
 ## Series ID Components
@@ -137,7 +137,7 @@ Code lists and attributes for series components
 | end_period | `time`|
 | end_year | `time`|
 | footnote_codes | `code`|
-| seasonal | `other`|
+| seasonal | `time`|
 | series_title | `text`|
 | srd_code | `code`|
 
@@ -215,8 +215,7 @@ Code lists and attributes for series components
 
 | Value | Count |
 |-------|-------|
-| M07 | 32808 |
-| M08 | 917 |
+| M08 | 33725 |
 | M13 | 156 |
 
 
@@ -254,10 +253,12 @@ Code lists and attributes for series components
 | Y | Data reflect controlling to interpolated statewide totals because the survey was not conducted. |
 
 
-### seasonal (other)
+### seasonal (time)
 
-No additional information available.
-
+| Value | Count |
+|-------|-------|
+| S | 422 |
+| U | 33459 |
 
 
 ### series_title (text)

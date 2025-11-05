@@ -1,6 +1,6 @@
 # ip: Industry Productivity and Costs
 
-Report Date: 2025-09-22
+Report Date: 2025-11-05
 
 ## Series File
 

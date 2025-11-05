@@ -1,6 +1,6 @@
 # cm: Employer Costs for Employee Compensation (NAICS)
 
-Report Date: 2025-09-22
+Report Date: 2025-11-05
 
 ## Series File
 
@@ -236,7 +236,7 @@ Code lists and attributes for series components
 | end_year | `time`|
 | estimate_code | `code`|
 | footnote_codes | `code`|
-| seasonal | `other`|
+| seasonal | `time`|
 | series_title | `text`|
 
 
@@ -386,10 +386,11 @@ Code lists and attributes for series components
 | ... | 7 more codes |
 
 
-### seasonal (other)
+### seasonal (time)
 
-No additional information available.
-
+| Value | Count |
+|-------|-------|
+| U | 7998 |
 
 
 ### series_title (text)
