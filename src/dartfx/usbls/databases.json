@@ -102,6 +102,10 @@
     "name": "Industry Productivity and Costs",
     "series_id_pattern": "(?P<database_id>[A-Z]{2})(?P<seasonal_code>[A-Z]{1})(?P<sector_code>[A-Z]{1})(?P<industry_code>[A-Z0-9\\_]{7})(?P<measure_code>[A-Z0-9]{3})(?P<duration_code>[\\d]{1})(?P<area_code>[\\d]{6})\\s*)"
   },
+  "is": {
+    "name": "Occupational Injuries and Illnesses Industry Data)",
+    "series_id_pattern": "(?P<database_id>[A-Z]{2})(?P<seasonal_code>[A-Z]{1})(?P<supersector_code>[\\d]{3})(?P<industry_code>[\\d]{6})(?P<data_type_code>[\\d]{3})(?P<case_type_code>[\\d]{1})(?P<area_code>[\\d]{6})\\s*)"
+  },
   "jl": {
     "name": "Job Openings and Labor Turnover Survey (SIC)"
   },
