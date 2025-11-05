@@ -21,7 +21,9 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
 dependencies = [
+  "bs4",
   "pandas",
+  "requests",
   "tabulate"
 ]
 
